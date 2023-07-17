@@ -13,19 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'principal',
-    loadChildren: () => import('./pages/principal/principal.module').then( m => m.PrincipalPageModule)
-  },
-  {
-    path: 'configuracion',
-    loadChildren: () => import('./pages/opciones/configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
-  },
-  {
-    path: 'mapa',
-    loadChildren: () => import('./pages/opciones/mapa/mapa.module').then( m => m.MapaPageModule)
-  },
-  {
-    path: 'principal',
-    loadChildren: () => import('./pages/opciones/principal/principal.module').then( m => m.PrincipalPageModule)
+    loadChildren: () => import('./pages/principal/principal.module').then( m => m.PrincipalPageModule),
   },
   {
     path: 'registro',

@@ -10,4 +10,19 @@
       <ion-title size="large">mapa</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let ubicacion of ubicaciones">
+      <ion-card>
+        <img alt="locales" src="{{ ubicacion.imagen }}" />
+        <ion-card-header>
+          <ion-card-title>{{ ubicacion.nombre }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Dirección : {{ ubicacion.direccion }}</p>
+          <p>Teléfono : {{ ubicacion.telefono }}</p>
+        </ion-card-content>
+      </ion-card>      
+    </ion-item>
+  </ion-list>
 </ion-content>
